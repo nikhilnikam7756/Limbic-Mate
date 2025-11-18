@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Table 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+	</head>
+	<body>
+        
+			<div class="row">
+				<div class="col-md-12">
+					<!-- <input class="form-control" type="text" placeholder="Search" [(ngModel)]="searchText"> -->
+					&nbsp;
+					<div  [hidden]="false" class="table-wrap" >
+						<table class="table table-striped">
+						  <thead class="thead-light">
+						    <tr>
+							  <th>Id</th>
+						      <th>Nonce</th>
+						      <th>Data</th>
+                              <th>Previous hash</th>
+							  <th>Hash</th>
+						      <th>Timestamp</th>
+							  
+						    </tr>
+						  </thead>
+						  <tbody>
+                            <tr *ngFor="let blockchain of userChainList;let i = index"> 
+                                <th >{{i+1}}</th>
+                                <td>{{blockchain.nonce}}</td>
+                                <td>{{blockchain.data}}</td>
+								<td>{{blockchain.prevHash}}</td>
+                                <td>{{blockchain.hash}}</td>
+                                <td>{{blockchain.timeStamp}}</td>
+                              </tr>
+
+                        </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+	</body>
+</html>
+

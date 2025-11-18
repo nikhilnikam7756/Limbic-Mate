@@ -1,0 +1,90 @@
+.home-section .text{
+    font-family: "Roboto";
+    display: inline-block;
+    color: #11101d;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 18px
+  }
+  .home-section{
+    position: relative;
+    background: #FFF;
+    min-height: 100vh;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  .sidebar.open ~ .home-section{
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+
+  a{
+    display: inline-flex;
+    height: 50px;
+    padding: 6px 12px;
+    width: 20%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    /* background: #11101D; */
+    background: #2199db;
+  }
+  input{
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 400;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    width: 50px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    /* background: #1d1b31; */
+    background: #2199db;
+  
+  }
+  li a:hover{
+    background: #FFF;
+  }
+  li a .links_name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+  li a .links_name{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  li a:hover .links_name,
+  li a:hover i{
+    transition: all 0.5s ease;
+    /* color: #11101D; */
+    color: #FFF;
+  }
+  li i{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+    color: #FFF;
+  }
+  .li.profile{
+    position: fixed;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    background: #1d1b31;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }

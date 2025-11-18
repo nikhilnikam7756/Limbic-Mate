@@ -1,0 +1,22 @@
+<html lang="en" dir="ltr">
+<body>
+    <app-auditor-nav-bar></app-auditor-nav-bar>
+        <section class="home-section">
+            <!-- <div class="text">Dashboard</div> -->
+            <app-user-chain-list [userEmail]="userEmail"></app-user-chain-list>
+            <br>
+            
+                <button (click)="downloadLog()">
+                  <span class="links_name">Download log File</span>
+                </button>
+
+            &nbsp;
+            
+            <button (click)="markChainVerified()">
+                <span class="links_name">Mark chain Verified</span>
+              </button>
+          
+
+        </section>
+</body>
+</html>
