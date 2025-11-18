@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # AuditBlockChain
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+=======
+# Limbic-Mate
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+>>>>>>> 7960176ccbefe7da7b79c1277bc9b7fad65b140a
 
 ## Development server
 
